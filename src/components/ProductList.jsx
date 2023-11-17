@@ -2,6 +2,7 @@ import Product from "./Product";
 import Navbar from "./Navbar";
 import useProducts from "../hooks/use-products";
 import Footer from "./Footer";
+import HeaderImage from "../assets/header.png";
 
 export default function ProductList() {
   const { products, order, setOrder } = useProducts();
@@ -12,7 +13,7 @@ export default function ProductList() {
         <Navbar title="Electronics" />
 
         <div className="relative">
-          <img src="src\assets\header.png"></img>
+          <img src={HeaderImage}></img>
           <h2 className="absolute text-6xl font-semibold text-white bottom-16 left-36">
             Electronics
           </h2>
