@@ -17,7 +17,6 @@ export default function useProducts() {
   }, [order]);
 
   function orderBy(type) {
-    console.log("Esto se ejecuta");
     const sortedProducts = [...products];
     if (type == "LOWEST_PRICE") {
       sortedProducts.sort((a, b) => a.cost - b.cost);
